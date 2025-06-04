@@ -7,7 +7,7 @@ const categoryData: Record<string, Category> = {
     id: 'corporate',
     name: 'Corporate',
     description: 'Professional attire for office environments, including suits, shirts, blouses, and accessories.',
-    image: "../../src/assets/img/Coporate-DU.png",
+    image: "../../src/assets/img/Corporate/Coporate-DU.png",
     ctaImage: 'https://images.pexels.com/photos/4341054/pexels-photo-4341054.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
     features: ['Custom tailoring', 'Premium fabrics', 'Corporate branding', 'Comfort-focused design'],
     products: [
@@ -15,37 +15,37 @@ const categoryData: Record<string, Category> = {
         name: 'Executive Suit Set',
         description: 'Premium tailored suit set for executives and management staff.',
         price: 'From AED 750',
-        image: 'https://images.pexels.com/photos/937481/pexels-photo-937481.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
+        image: '../../src/assets/img/Corporate/Suit.jpg'
       },
       {
-        name: 'Corporate Shirt Collection',
-        description: 'High-quality shirts in various colors with optional embroidery.',
-        price: 'From AED 150',
-        image: 'https://images.pexels.com/photos/6567607/pexels-photo-6567607.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
+        name: 'Executive shirts',
+        description: 'Crisp, polished shirts for a sharp corporate look.',
+        price: 'From AED 40',
+        image: '../../src/assets/img/Corporate/Executiveshirts.jpg'
       },
       {
-        name: 'Professional Blouse Set',
-        description: 'Elegant blouses designed for comfort and professional appearance.',
-        price: 'From AED 180',
-        image: 'https://images.pexels.com/photos/5647119/pexels-photo-5647119.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
+        name: 'Formal trousers',
+        description: 'Tailored comfort for daily executive wear.',
+        price: 'From AED 60',
+        image: '../../src/assets/img/Corporate/Trousers.jpg'
       },
       {
-        name: 'Corporate Trouser Collection',
-        description: 'Durable and comfortable trousers for everyday office wear.',
-        price: 'From AED 200',
-        image: 'https://images.pexels.com/photos/8460872/pexels-photo-8460872.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
+        name: 'Business skirts',
+        description: 'Smart-fit skirts that combine modesty with elegance.',
+        price: 'From AED 55',
+        image: '../../src/assets/img/Corporate/Business skirts.png'
       },
       {
-        name: 'Reception Staff Uniform',
-        description: 'Distinctive uniforms for front desk and reception staff.',
-        price: 'From AED 400',
-        image: 'https://images.pexels.com/photos/8989488/pexels-photo-8989488.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
+        name: 'Leather belts',
+        description: 'High-quality belts that complete the executive look. ',
+        price: 'From AED 25',
+        image: '../../src/assets/img/Corporate/belt.png'
       },
       {
-        name: 'Corporate Accessories',
-        description: 'Ties, scarves, and other accessories to complete your corporate look.',
-        price: 'From AED 80',
-        image: 'https://images.pexels.com/photos/6786680/pexels-photo-6786680.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
+        name: 'Branded ID badges',
+        description: 'Custom identity tags for a professional first impression.',
+        price: 'From AED 10',
+        image: '../../src/assets/img/Corporate/ID.png'
       }
     ]
   },
@@ -57,22 +57,34 @@ const categoryData: Record<string, Category> = {
     features: ['Antimicrobial fabrics', 'Functional pockets', 'Easy-care materials', 'Flexible sizing'],
     products: [
       {
-        name: 'Premium Scrub Set',
-        description: 'Comfortable scrubs with multiple pockets and antimicrobial fabric.',
-        price: 'From AED 220',
-        image: "../../src/assets/img/medical/Scrub.png"
+        name: 'Scrub suits',
+        description: 'Breathable, antibacterial fabric for everyday clinical use.',
+        price: 'From AED 65',
+        image: '../../src/assets/img/medical/Scrub.png'
       },
       {
-        name: 'Doctor\'s Lab Coat',
-        description: 'Professional lab coats with custom embroidery options.',
-        price: 'From AED 250',
-        image: "../../src/assets/img/medical/Doctor.png"
+        name: 'Lab coats',
+        description: 'Clean white coats with side pockets and logo branding.',
+        price: 'From AED 40',
+        image: '../../src/assets/img/medical/Doctor.png'
       },
       {
-        name: 'Nurse Uniform Set',
-        description: 'Complete nurse uniforms with options for customization.',
-        price: 'From AED 280',
-        image: 'https://images.pexels.com/photos/7661576/pexels-photo-7661576.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
+        name: 'Head caps',
+        description: 'Protective and hygienic headwear for medical staff.',
+        price: 'From AED 6',
+        image: '../../src/assets/img/medical/Headcap.png'
+      },
+      {
+        name: 'Face masks',
+        description: 'Comfortable, breathable face masks with medical-grade safety.',
+        price: 'From AED 2',
+        image: '../../src/assets/img/medical/Mask.png'
+      },
+      {
+        name: 'ID tags',
+        description: 'Lightweight tags for staff recognition and access.',
+        price: 'From AED 8',
+        image: '../../src/assets/img/medical/ID.png'
       }
       
       
@@ -86,40 +98,40 @@ const categoryData: Record<string, Category> = {
     features: ['Stain-resistant fabrics', 'Brand-aligned designs', 'Multiple style options', 'Durability for daily wear'],
     products: [
       {
-        name: 'Chef Uniform Set',
-        description: 'Professional chef jackets, pants, and hats for kitchen staff.',
-        price: 'From AED 280',
-        image: 'https://images.pexels.com/photos/8969237/pexels-photo-8969237.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
+        name: 'Waiter Shirts',
+        description: 'Polished shirts designed for restaurant and banquet staff.',
+        price: 'From AED 38',
+        image: '#waiter-shirts-img'
       },
       {
-        name: 'Hotel Front Desk Uniform',
-        description: 'Elegant uniforms for front desk and reception staff.',
-        price: 'From AED 350',
-        image: 'https://images.pexels.com/photos/5696862/pexels-photo-5696862.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
+        name: 'Chef Coats',
+        description: 'Heat-resistant, breathable coats for professional chefs.',
+        price: 'From AED 65',
+        image: '#chef-coats-img'
       },
       {
-        name: 'Waiter/Waitress Attire',
-        description: 'Professional serving staff uniforms for restaurants and hotels.',
-        price: 'From AED 240',
-        image: 'https://images.pexels.com/photos/9217248/pexels-photo-9217248.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
+        name: 'Aprons',
+        description: 'Durable aprons with logo printing for kitchen and service teams.',
+        price: 'From AED 15',
+        image: '#aprons-img'
       },
       {
-        name: 'Housekeeping Uniform',
-        description: 'Practical and professional uniforms for housekeeping staff.',
-        price: 'From AED 200',
-        image: 'https://images.pexels.com/photos/4464881/pexels-photo-4464881.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
+        name: 'Hospitality T-Shirts',
+        description: 'Branded T-shirts for casual, modern restaurant staff uniforms.',
+        price: 'From AED 25',
+        image: '#hospitality-tshirts-img'
       },
       {
-        name: 'Concierge Uniform',
-        description: 'Distinguished uniforms for concierge and guest service staff.',
-        price: 'From AED 380',
-        image: 'https://images.pexels.com/photos/7363183/pexels-photo-7363183.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
+        name: 'Trousers',
+        description: 'Stretch-fit trousers that balance style and comfort.',
+        price: 'From AED 45',
+        image: '#hospitality-trousers-img'
       },
       {
-        name: 'Barista/Bartender Attire',
-        description: 'Stylish and practical uniforms for bar and café staff.',
-        price: 'From AED 220',
-        image: 'https://images.pexels.com/photos/4252139/pexels-photo-4252139.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
+        name: 'Caps',
+        description: 'Logo-printed caps to complete the branded look.',
+        price: 'From AED 10',
+        image: '#hospitality-caps-img'
       }
     ]
   },
@@ -130,41 +142,41 @@ const categoryData: Record<string, Category> = {
     image: 'https://images.pexels.com/photos/8961321/pexels-photo-8961321.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
     features: ['High-visibility options', 'Flame-resistant materials', 'Heavy-duty construction', 'Safety compliance'],
     products: [
-      {
-        name: 'Safety Coverall',
-        description: 'Full-body coveralls with safety features for industrial environments.',
-        price: 'From AED 280',
-        image: 'https://images.pexels.com/photos/8961321/pexels-photo-8961321.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
+       {
+        name: 'Coveralls',
+        description: 'All-in-one protective gear built for industrial environments.',
+        price: 'From AED 75',
+        image: '#coveralls-img'
       },
       {
-        name: 'Hi-Vis Work Shirt',
-        description: 'High-visibility work shirts with reflective elements.',
-        price: 'From AED 150',
-        image: 'https://images.pexels.com/photos/6474471/pexels-photo-6474471.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
+        name: 'Reflective Vests',
+        description: 'Hi-vis vests for day and night visibility on-site.',
+        price: 'From AED 20',
+        image: '#reflective-vests-img'
       },
       {
-        name: 'Cargo Work Pants',
-        description: 'Durable cargo pants with multiple pockets for tools and equipment.',
-        price: 'From AED 180',
-        image: 'https://images.pexels.com/photos/4482935/pexels-photo-4482935.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
+        name: 'Work Shirts',
+        description: 'Tough, breathable shirts suitable for long shifts.',
+        price: 'From AED 40',
+        image: '#industrial-work-shirts-img'
       },
       {
-        name: 'Flame-Resistant Jacket',
-        description: 'Safety jackets with flame-resistant properties for hazardous environments.',
-        price: 'From AED 320',
-        image: 'https://images.pexels.com/photos/8961286/pexels-photo-8961286.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
+        name: 'Industrial Trousers',
+        description: 'Reinforced trousers with utility pockets for tools and gear.',
+        price: 'From AED 50',
+        image: '#industrial-trousers-img'
       },
       {
-        name: 'Mechanic\'s Uniform',
-        description: 'Specialized uniforms for mechanics and maintenance staff.',
-        price: 'From AED 240',
-        image: 'https://images.pexels.com/photos/6474499/pexels-photo-6474499.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
+        name: 'Safety Shoes',
+        description: 'Steel-toe shoes with anti-slip soles for worker protection.',
+        price: 'From AED 85',
+        image: '#safety-shoes-img'
       },
       {
-        name: 'Construction Safety Vest',
-        description: 'High-visibility vests with customizable branding options.',
-        price: 'From AED 100',
-        image: 'https://images.pexels.com/photos/8972918/pexels-photo-8972918.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
+        name: 'Helmets',
+        description: 'Impact-resistant helmets for head protection on-site.',
+        price: 'From AED 25',
+        image: '#industrial-helmets-img'
       }
     ]
   },
@@ -175,41 +187,41 @@ const categoryData: Record<string, Category> = {
     image: 'https://images.pexels.com/photos/5699676/pexels-photo-5699676.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
     features: ['Tactical design elements', 'Durable materials', 'Weather adaptability', 'Professional appearance'],
     products: [
-      {
-        name: 'Security Officer Uniform',
-        description: 'Complete uniform set for security officers with professional appearance.',
-        price: 'From AED 350',
-        image: 'https://images.pexels.com/photos/5699676/pexels-photo-5699676.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
+       {
+        name: 'Security Shirts',
+        description: 'Structured shirts that offer authority and presence.',
+        price: 'From AED 38',
+        image: '#security-shirts-img'
       },
       {
-        name: 'Tactical Security Shirt',
-        description: 'Specialized shirts with tactical features for security personnel.',
-        price: 'From AED 180',
-        image: 'https://images.pexels.com/photos/8127553/pexels-photo-8127553.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
+        name: 'Tactical Trousers',
+        description: 'Flexible, reinforced trousers for duty wear.',
+        price: 'From AED 50',
+        image: '#tactical-trousers-img'
       },
       {
-        name: 'Security Trouser',
-        description: 'Durable trousers with multiple pockets for security equipment.',
-        price: 'From AED 200',
-        image: 'https://images.pexels.com/photos/9950569/pexels-photo-9950569.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
+        name: 'Caps & Berets',
+        description: 'Formal headwear for professional security presentation.',
+        price: 'From AED 12',
+        image: '#security-caps-img'
       },
       {
-        name: 'Security Jacket',
-        description: 'Weather-resistant jackets with security features and branding options.',
-        price: 'From AED 280',
-        image: 'https://images.pexels.com/photos/7380776/pexels-photo-7380776.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
+        name: 'Security Jackets',
+        description: 'All-weather jackets with logo placement and pockets.',
+        price: 'From AED 90',
+        image: '#security-jackets-img'
       },
       {
-        name: 'Hotel Security Uniform',
-        description: 'Professional uniforms for hotel and hospitality security staff.',
-        price: 'From AED 320',
-        image: 'https://images.pexels.com/photos/6182573/pexels-photo-6182573.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
+        name: 'Duty Belts',
+        description: 'Multi-functional belts to carry essential tools.',
+        price: 'From AED 25',
+        image: '#security-duty-belts-img'
       },
       {
-        name: 'Event Security Attire',
-        description: 'Identifiable uniforms for event security personnel.',
-        price: 'From AED 250',
-        image: 'https://images.pexels.com/photos/6231591/pexels-photo-6231591.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
+        name: 'Name & ID Tags',
+        description: 'Essential for identity verification and formality.',
+        price: 'From AED 10',
+        image: '#security-id-tags-img'
       }
     ]
   },
@@ -221,40 +233,40 @@ const categoryData: Record<string, Category> = {
     features: ['Easy-care fabrics', 'Growth allowances', 'Customizable designs', 'Institutional branding'],
     products: [
       {
-        name: 'Primary School Uniform Set',
-        description: 'Complete uniform sets for primary school students with customizable options.',
-        price: 'From AED 220',
-        image: 'https://images.pexels.com/photos/5212345/pexels-photo-5212345.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
+        name: 'School Shirts',
+        description: 'Smart-fit cotton shirts in school-specific colors.',
+        price: 'From AED 30',
+        image: '#school-shirts-img'
       },
       {
-        name: 'Secondary School Uniform',
-        description: 'Age-appropriate uniforms for secondary school students.',
-        price: 'From AED 250',
-        image: 'https://images.pexels.com/photos/5538617/pexels-photo-5538617.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
-      },
-      {
-        name: 'School PE Kit',
-        description: 'Comfortable and durable physical education uniforms for students.',
-        price: 'From AED 180',
-        image: 'https://images.pexels.com/photos/8534689/pexels-photo-8534689.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
-      },
-      {
-        name: 'School Staff Uniform',
-        description: 'Professional uniforms for teaching and administrative staff.',
-        price: 'From AED 280',
-        image: 'https://images.pexels.com/photos/5212682/pexels-photo-5212682.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
-      },
-      {
-        name: 'Kindergarten Uniform',
-        description: 'Colorful and practical uniforms for kindergarten students.',
-        price: 'From AED 150',
-        image: 'https://images.pexels.com/photos/8471977/pexels-photo-8471977.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
-      },
-      {
-        name: 'School Accessories',
-        description: 'Ties, caps, badges, and other accessories to complete school uniforms.',
+        name: 'Pants & Skirts',
+        description: 'Tailored school trousers and skirts for a smart uniform look.',
         price: 'From AED 40',
-        image: 'https://images.pexels.com/photos/5538583/pexels-photo-5538583.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
+        image: '#school-bottoms-img'
+      },
+      {
+        name: 'School Blazers',
+        description: 'Formal blazers with logo embroidery for senior students.',
+        price: 'From AED 110',
+        image: '#school-blazers-img'
+      },
+      {
+        name: 'PE Uniforms',
+        description: 'Flexible and breathable kits for physical education.',
+        price: 'From AED 35',
+        image: '#pe-uniforms-img'
+      },
+      {
+        name: 'Socks & Ties',
+        description: 'Color-coded socks and matching ties for full uniform compliance.',
+        price: 'From AED 10',
+        image: '#school-accessories-img'
+      },
+      {
+        name: 'Backpacks',
+        description: 'Durable school bags with logo print and extra padding.',
+        price: 'From AED 45',
+        image: '#school-backpacks-img'
       }
     ]
   },
@@ -265,44 +277,39 @@ const categoryData: Record<string, Category> = {
     image: 'https://images.pexels.com/photos/6765615/pexels-photo-6765615.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
     features: ['Moisture-wicking fabrics', 'Customizable designs', 'Team branding', 'Comfort during activity'],
     products: [
-      {
-        name: 'Football Team Kit',
-        description: 'Complete football team kits with custom designs and player numbers.',
-        price: 'From AED 200',
-        image: 'https://images.pexels.com/photos/6765615/pexels-photo-6765615.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
+     {
+        name: 'Team Jerseys',
+        description: 'Lightweight jerseys in team colors with breathable mesh panels.',
+        price: 'From AED 40',
+        image: '#team-jerseys-img'
       },
       {
-        name: 'Basketball Uniform',
-        description: 'Breathable basketball jerseys and shorts with team branding.',
-        price: 'From AED 180',
-        image: 'https://images.pexels.com/photos/8224992/pexels-photo-8224992.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
+        name: 'Shorts & Track Pants',
+        description: 'Comfort-fit lowers for games, training, and drills.',
+        price: 'From AED 35',
+        image: '#sports-bottoms-img'
       },
       {
-        name: 'Cricket Team Kit',
-        description: 'Professional cricket uniforms with custom designs and colors.',
-        price: 'From AED 240',
-        image: 'https://images.pexels.com/photos/7290196/pexels-photo-7290196.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
+        name: 'Tracksuits',
+        description: 'Cozy zip-up sets for warmups and post-game wear.',
+        price: 'From AED 90',
+        image: '#tracksuits-img'
       },
       {
-        name: 'Running Team Gear',
-        description: 'Performance running shirts and shorts for athletics teams.',
-        price: 'From AED 150',
-        image: 'https://images.pexels.com/photos/6572472/pexels-photo-6572472.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
+        name: 'Training Tees',
+        description: 'Stretchy, sweat-resistant tees for intense workouts.',
+        price: 'From AED 25',
+        image: '#training-tees-img'
       },
       {
-        name: 'Swimming Team Uniform',
-        description: 'Professional swimwear for swimming teams and competitions.',
-        price: 'From AED 180',
-        image: 'https://images.pexels.com/photos/10493494/pexels-photo-10493494.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
-      },
-      {
-        name: 'Training Tracksuit',
-        description: 'Team tracksuits with customizable designs and branding options.',
-        price: 'From AED 280',
-        image: 'https://images.pexels.com/photos/3764015/pexels-photo-3764015.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
+        name: 'Caps & Headbands',
+        description: 'Performance accessories to keep hair and sweat under control.',
+        price: 'From AED 8',
+        image: '#sports-caps-img'
       }
     ]
-  }
+  },
+  
 };
 
 // Function to get category data

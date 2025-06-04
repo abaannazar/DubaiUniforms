@@ -121,13 +121,13 @@ const Header = () => {
                 <X className="h-5 w-5" />
               </button>
             </div>
-            <nav className="flex-1 overflow-y-auto">
+            <nav className="flex-1 overflow-y-auto mr-4">
               <NavLink to="/" className={mobileLinkClasses} onClick={closeMenu} end>Home</NavLink>
               <NavLink to="/about" className={mobileLinkClasses} onClick={closeMenu}>About Us</NavLink>
               <NavLink to="/categories" className={mobileLinkClasses} onClick={closeMenu}>Categories</NavLink>
               <NavLink to="/contact" className={mobileLinkClasses} onClick={closeMenu}>Contact</NavLink>
             </nav>
-            <div className="p-4 border-t">
+            <div className="p-4 border-t ">
               <Link 
                 to="/contact" 
                 className="btn btn-primary w-full justify-center"

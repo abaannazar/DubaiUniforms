@@ -12,9 +12,9 @@ const CategoryDetailPage = () => {
 
   useEffect(() => {
     if (categoryData) {
-      document.title = `${categoryData.name} Uniforms | Dubai Uniforms Craft`;
+      document.title = `${categoryData.name} Uniforms | Dubai Uniforms`;
     } else {
-      document.title = 'Category Not Found | Dubai Uniforms Craft';
+      document.title = 'Category Not Found | Dubai Uniforms';
     }
   }, [categoryData]);
 
@@ -219,7 +219,7 @@ const CategoryDetailPage = () => {
             </div>
             <div>
               <img 
-                src="https://images.pexels.com/photos/5699648/pexels-photo-5699648.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+                src="../../src/assets/factory.png" 
                 alt="Uniform customization" 
                 className="rounded-lg shadow-lg"
               />

@@ -9,7 +9,7 @@ const categories = [
     name: 'Corporate',
     icon: Briefcase,
     description: 'Professional attire for office environments, including suits, shirts, blouses, and accessories.',
-    image: "src/assets/img/Coporate-DU.png"
+    image: "src/assets/img/Corporate/Coporate-DU.png"
   },
   {
     id: 'medical',

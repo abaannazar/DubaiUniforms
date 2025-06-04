@@ -49,7 +49,7 @@ const CtaSection = () => {
             </div>
             <div className="md:w-1/2 relative min-h-[300px]">
               <img 
-                src="https://images.pexels.com/photos/6193407/pexels-photo-6193407.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+                src="https://cdn.garment.dony.vn/wp-content/uploads/2023/03/Team-group-uniform-styles-ideas-top-design-best-trends.jpg" 
                 alt="Custom uniforms" 
                 className="absolute inset-0 w-full h-full object-cover"
               />

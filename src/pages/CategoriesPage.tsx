@@ -159,8 +159,8 @@ const CategoriesPage = () => {
                   <Link to="/contact" className="btn btn-primary">
                     Contact Us
                   </Link>
-                  <a href="tel:+97142345678" className="btn btn-outline">
-                    Call +971 4 234 5678
+                  <a href="tel:+971506988658" className="btn btn-outline">
+                    Call +971 50 6988 658
                   </a>
                 </div>
               </div>
