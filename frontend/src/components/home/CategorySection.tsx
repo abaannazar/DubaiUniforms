@@ -2,6 +2,13 @@ import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { Link } from 'react-router-dom';
 import { Briefcase, Stethoscope, UtensilsCrossed, HardHat, ShieldCheck, GraduationCap, Shirt } from 'lucide-react';
+import corporate from '../../assets/img/Corporate/Coporate-DU.png';
+import medical from '../../assets/img/Medical-DU.png';
+import hospitality from '../../assets/img/Hospitality-DU.png';
+import industrial from '../../assets/img/Industrial-DU.png';
+import security from '../../assets/img/Security-DU.png';
+import school from '../../assets/img/School-DU.png';
+import sports from '../../assets/img/Sports-DU.png';
 
 const categories = [
   {
@@ -9,49 +16,49 @@ const categories = [
     name: 'Corporate',
     icon: Briefcase,
     description: 'Professional attire for office environments, including suits, shirts, blouses, and accessories.',
-    image: "src/assets/img/Corporate/Coporate-DU.png"
+    image: corporate
   },
   {
     id: 'medical',
     name: 'Medical',
     icon: Stethoscope,
     description: 'Comfortable and functional scrubs, lab coats, and healthcare apparel for medical professionals.',
-    image: 'src/assets/img/Medical-DU.png'
+    image: medical
   },
   {
     id: 'hospitality',
     name: 'Hospitality',
     icon: UtensilsCrossed,
     description: 'Elegant uniforms for hotels, restaurants, and hospitality services that enhance customer experience.',
-    image: 'src/assets/img/Hospitality-DU.png'
+    image: hospitality
   },
   {
     id: 'industrial',
     name: 'Industrial',
     icon: HardHat,
     description: 'Durable workwear and safety apparel for industrial environments and construction sites.',
-    image: 'src/assets/img/Industrial-DU.png'
+    image: industrial
   },
   {
     id: 'security',
     name: 'Security',
     icon: ShieldCheck,
     description: 'Professional security uniforms that command respect and provide comfort during long shifts.',
-    image: 'src/assets/img/Security-DU.png'
+    image: security
   },
   {
     id: 'school',
     name: 'School',
     icon: GraduationCap,
     description: 'Comfortable and durable school uniforms that foster a sense of belonging and pride.',
-    image: 'src/assets/img/School-DU.png'
+    image: school
   },
   {
     id: 'sports',
     name: 'Sports',
     icon: Shirt,
     description: 'Performance sportswear and team uniforms that enhance comfort and represent your brand.',
-    image: 'src/assets/img/Sports-DU.png'
+    image: sports
   },
 ];
 

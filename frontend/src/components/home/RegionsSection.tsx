@@ -5,7 +5,7 @@ const regions = [
   {
     name: 'United Arab Emirates',
     flag: '🇦🇪',
-    cities: ['Dubai', 'Abu Dhabi', 'Sharjah', 'Ajman', 'Ras Al Khaimah', 'Fujairah', 'Umm Al Quwain']
+    cities: ['Dubai', 'Abu Dhabi', 'Sharjah', 'Ajman', 'Ras Al Khaimah', 'Fujairah', 'Umm Al Quwain','AL Ain']
   },
   {
     name: 'Saudi Arabia',

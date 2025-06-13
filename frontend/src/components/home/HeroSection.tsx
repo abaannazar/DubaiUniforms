@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Phone } from 'lucide-react';
+import whatsapp from '../../assets/whatsapp icon.png'; // Adjust the path as necessary
 
 
 const HeroSection = () => {
@@ -53,7 +54,7 @@ const HeroSection = () => {
               rel="noopener noreferrer"
               className="btn btn-secondary"
             >
-              <img src="src\assets\whatsapp icon.png" alt="" className='w-9' />
+              <img src={whatsapp} alt="" className='w-9' />
               Chat on WhatsApp
             </a>
             <a 
@@ -74,8 +75,8 @@ const HeroSection = () => {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.7, delay: 0.6 }}
           >
-            Contact us at: <a href="tel:+971506988658" className="text-secondary-500">+971 50 698 8658</a> | 
-            <a href="mailto:sales@dubaiuniforms.ae" className="text-secondary-500 ml-1">sales@dubaiuniforms.ae</a>
+            Contact us at: 
+            <a href="mailto:sales@dubaiuniform.com" className="text-secondary-500 ml-1">sales@dubaiuniform.com</a>
           </motion.p>
         </div>
       </div>

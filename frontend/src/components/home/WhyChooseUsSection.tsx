@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { Scissors, Timer, BadgeCheck, Truck } from 'lucide-react';
+import img from '../../assets/img/In-house.png'
 
 const features = [
   {
@@ -56,7 +57,7 @@ const WhyChooseUsSection = () => {
         <div className="section-title">
           <h2 className="text-white mb-4">Why Choose Us</h2>
           <p className="max-w-3xl mx-auto text-neutral-100">
-            At Dubai Uniforms Craft, we pride ourselves on our commitment to excellence, 
+            At Dubai Uniforms, we pride ourselves on our commitment to excellence, 
             attention to detail, and customer satisfaction.
           </p>
         </div>
@@ -109,7 +110,7 @@ const WhyChooseUsSection = () => {
             </div>
             <div className="md:w-1/3">
               <img 
-                src="src\assets\img\In-house.png" 
+                src={img}
                 alt="Manufacturing facility" 
                 className="rounded-lg shadow-lg"
               />

@@ -38,11 +38,11 @@ const CtaSection = () => {
                     +971 50 698 8658
                   </a>
                   <a 
-                    href="mailto:sales@dubaiuniforms.ae" 
+                    href="mailto:sales@dubaiuniform.com" 
                     className="inline-flex items-center text-white hover:text-secondary-500 transition-colors"
                   >
                     <Mail className="mr-2 h-5 w-5" />
-                    sales@dubaiuniforms.ae
+                    sales@dubaiuniform.com
                   </a>
                 </div>
               </div>

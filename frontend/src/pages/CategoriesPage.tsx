@@ -2,6 +2,17 @@ import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Briefcase, Stethoscope, UtensilsCrossed, HardHat, ShieldCheck, GraduationCap, Shirt } from 'lucide-react';
+import { Helmet } from 'react-helmet-async';
+
+//image imports
+import corporate from '../assets/img/Corporate/Coporate-DU.png'
+import medical from '../assets/img/Medical/Medical2-DU.png';
+import hospitality from '../assets/img/Hospitality-DU.png';
+import construction from '../assets/img/Industrial-DU.png';
+import security from '../assets/img/Security-DU.png';
+import education from '../assets/img/School-DU.png';
+import sports from '../assets/img/Sports-DU.png';
+
 
 const categories = [
   {
@@ -10,7 +21,7 @@ const categories = [
     icon: Briefcase,
     description: 'Professional attire for office environments, including suits, shirts, blouses, and accessories.',
     features: ['Custom tailoring', 'Premium fabrics', 'Corporate branding', 'Comfort-focused design'],
-    image: 'https://images.pexels.com/photos/3760514/pexels-photo-3760514.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
+    image: corporate
   },
   {
     id: 'medical',
@@ -18,7 +29,7 @@ const categories = [
     icon: Stethoscope,
     description: 'Comfortable and functional scrubs, lab coats, and healthcare apparel for medical professionals.',
     features: ['Antimicrobial fabrics', 'Functional pockets', 'Easy-care materials', 'Flexible sizing'],
-    image: 'https://images.pexels.com/photos/5407206/pexels-photo-5407206.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
+    image: medical
   },
   {
     id: 'hospitality',
@@ -26,7 +37,7 @@ const categories = [
     icon: UtensilsCrossed,
     description: 'Elegant uniforms for hotels, restaurants, and hospitality services that enhance customer experience.',
     features: ['Stain-resistant fabrics', 'Brand-aligned designs', 'Multiple style options', 'Durability for daily wear'],
-    image: 'https://images.pexels.com/photos/5634667/pexels-photo-5634667.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
+    image: hospitality
   },
   {
     id: 'industrial',
@@ -34,7 +45,7 @@ const categories = [
     icon: HardHat,
     description: 'Durable workwear and safety apparel for industrial environments and construction sites.',
     features: ['High-visibility options', 'Flame-resistant materials', 'Heavy-duty construction', 'Safety compliance'],
-    image: 'https://images.pexels.com/photos/8961321/pexels-photo-8961321.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
+    image: construction
   },
   {
     id: 'security',
@@ -42,7 +53,7 @@ const categories = [
     icon: ShieldCheck,
     description: 'Professional security uniforms that command respect and provide comfort during long shifts.',
     features: ['Tactical design elements', 'Durable materials', 'Weather adaptability', 'Professional appearance'],
-    image: 'https://images.pexels.com/photos/5699676/pexels-photo-5699676.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
+    image: security
   },
   {
     id: 'school',
@@ -50,7 +61,7 @@ const categories = [
     icon: GraduationCap,
     description: 'Comfortable and durable school uniforms that foster a sense of belonging and pride.',
     features: ['Easy-care fabrics', 'Growth allowances', 'Customizable designs', 'Institutional branding'],
-    image: 'https://images.pexels.com/photos/5212345/pexels-photo-5212345.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
+    image: education
   },
   {
     id: 'sports',
@@ -58,7 +69,7 @@ const categories = [
     icon: Shirt,
     description: 'Performance sportswear and team uniforms that enhance comfort and represent your brand.',
     features: ['Moisture-wicking fabrics', 'Customizable designs', 'Team branding', 'Comfort during activity'],
-    image: 'https://images.pexels.com/photos/6765615/pexels-photo-6765615.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
+    image: sports
   },
 ];
 
@@ -69,6 +80,13 @@ const CategoriesPage = () => {
 
   return (
     <>
+
+      <Helmet>
+        <title>Uniform Categories | Corporate, Medical, Hospitality & More</title>
+        <meta name="description" content="Explore our wide range of uniforms: corporate wear, medical scrubs, hospitality attire, industrial workwear, and more – all customizable." />
+        <meta name="keywords" content="corporate uniforms, hospital scrubs, chef wear, industrial workwear, hotel uniforms uae" />
+        <link rel="canonical" href="https://dubaiuniform.com/categories" />
+      </Helmet>
       {/* Hero Section */}
       <section className="relative py-20 bg-primary-600">
         <div className="container-custom text-center text-white">

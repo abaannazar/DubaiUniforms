@@ -12,7 +12,7 @@ const Footer = () => {
           {/* Company Info */}
           <div>
             <div className="flex items-center mb-6">
-              <img src={logo_White} alt="" className='h-45' />
+              <img src={logo_White} alt="Dubai Uniforms Logo" className='h-20' />
               
             </div>
             <p className="text-neutral-300 mb-6">
@@ -65,9 +65,9 @@ const Footer = () => {
             <div className="space-y-4">
               <div className="flex items-start">
                 <MapPin className="mr-3 h-5 w-5 text-secondary-500 flex-shrink-0 mt-1" />
-                <p className="text-neutral-300">
-                  
-                </p>
+                <a href="https://maps.google.com/maps?ll=25.378075,55.476401&z=16&t=m&hl=en&gl=IN&mapclient=embed&cid=12030503363604171047" target='_blank' className="text-neutral-300 hover:text-white transition-colors">
+                  Ajman Industrial 2 <br /> Ajman - United Arab Emirates
+                </a>
               </div>
               <div className="flex items-center">
                 <Phone className="mr-3 h-5 w-5 text-secondary-500 flex-shrink-0" />
@@ -77,8 +77,8 @@ const Footer = () => {
               </div>
               <div className="flex items-center">
                 <Mail className="mr-3 h-5 w-5 text-secondary-500 flex-shrink-0" />
-                <a href="mailto:sales@dubaiuniforms.ae" className="text-neutral-300 hover:text-white transition-colors">
-                  sales@dubaiuniforms.ae
+                <a href="mailto:sales@dubaiuniform.com" className="text-neutral-300 hover:text-white transition-colors">
+                  sales@dubaiuniform.com
                 </a>
               </div>
               <div className="flex items-center">
@@ -105,7 +105,7 @@ const Footer = () => {
               <Link to="/privacy-policy" className="text-neutral-400 text-sm hover:text-white transition-colors">
                 Privacy Policy
               </Link>
-              <Link to="/terms-conditions" className="text-neutral-400 text-sm hover:text-white transition-colors">
+              <Link to="/terms-and-conditions" className="text-neutral-400 text-sm hover:text-white transition-colors">
                 Terms & Conditions
               </Link>
             </div>

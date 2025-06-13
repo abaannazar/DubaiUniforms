@@ -2,6 +2,8 @@ import { useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { ArrowLeft, Ruler, Palette, Shirt, BadgeCheck } from 'lucide-react';
+import { Helmet } from 'react-helmet-async';
+
 
 // Import our category data
 import { getCategoryData } from '../utils/categoryData';
@@ -10,30 +12,49 @@ const CategoryDetailPage = () => {
   const { category } = useParams<{ category: string }>();
   const categoryData = getCategoryData(category || '');
 
-  useEffect(() => {
-    if (categoryData) {
-      document.title = `${categoryData.name} Uniforms | Dubai Uniforms`;
-    } else {
-      document.title = 'Category Not Found | Dubai Uniforms';
-    }
-  }, [categoryData]);
+useEffect(() => {
+  if (categoryData) {
+    document.title = `${categoryData.name} Uniforms | Dubai Uniforms`;
+  } else {
+    document.title = 'Category Not Found | Dubai Uniforms';
+  }
+}, [categoryData]);
 
   if (!categoryData) {
     return (
-      <div className="section">
-        <div className="container-custom text-center">
-          <h1 className="mb-6">Category Not Found</h1>
-          <p className="mb-8">The uniform category you're looking for does not exist.</p>
-          <Link to="/categories" className="btn btn-primary">
-            View All Categories
-          </Link>
+      <>
+        <Helmet>
+          <title>Category Not Found | Dubai Uniforms</title>
+          <meta name="robots" content="noindex" />
+        </Helmet>
+        <div className="section">
+          <div className="container-custom text-center">
+            <h1 className="mb-6">Category Not Found</h1>
+            <p className="mb-8">The uniform category you're looking for does not exist.</p>
+            <Link to="/categories" className="btn btn-primary">
+              View All Categories
+            </Link>
+          </div>
         </div>
-      </div>
+      </>
     );
   }
 
   return (
     <>
+    <Helmet>
+      <title>{categoryData.name} Uniforms | Dubai Uniforms</title>
+      <meta
+        name="description"
+        content={`Explore premium quality ${categoryData.name.toLowerCase()} uniforms by Dubai Uniforms. Custom-made for businesses across the GCC.`}
+      />
+      <meta
+        name="keywords"
+        content={`${categoryData.name.toLowerCase()} uniforms dubai, custom ${categoryData.name.toLowerCase()} wear gcc, ${categoryData.name.toLowerCase()} suppliers uae`}
+      />
+      <link rel="canonical" href={`https://dubaiuniform.com/categories/${category}`} />
+    </Helmet>
+
       {/* Hero Section */}
       <section className="relative py-20 bg-primary-600">
         <div className="container-custom">

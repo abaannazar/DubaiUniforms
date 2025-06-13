@@ -1,6 +1,8 @@
 import { useState, useEffect, FormEvent } from 'react';
 import { motion } from 'framer-motion';
 import { MapPin, Phone, Mail, Clock } from 'lucide-react';
+import { Helmet } from 'react-helmet-async';
+import whatsapp from '../assets/whatsapp icon-01.png'
 
 const ContactPage = () => {
   const [formData, setFormData] = useState({
@@ -25,36 +27,36 @@ const ContactPage = () => {
 const handleSubmit = async (e: FormEvent) => {
   e.preventDefault();
   setIsSubmitting(true);
-
-  try {
-    const response = await fetch('https://dubaiuniform.com/backend/send-enquiry.php', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(formData),
+  try {      console.log('Sending form data:', formData);
+      const response = await fetch('https://dubaiuniform.com/send-email.php', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json',
+          'X-Requested-With': 'XMLHttpRequest'
+        },
+        mode: 'cors',
+        body: JSON.stringify(formData)
     });
 
-    const result = await response.json();
-
-    if (response.ok && result.success) {
+    const data = await response.json();
+    
+    if (data.success) {
       setIsSubmitted(true);
-      alert('Message sent successfully!');
       setFormData({
         name: '',
         email: '',
         phone: '',
         company: '',
         message: '',
-        category: '',
+        category: ''
       });
     } else {
-      console.error(result.message || 'Unknown error');
-      alert('Failed to send message. Please try again later.');
+      alert(data.message || 'Failed to send message. Please try again later.');
     }
   } catch (error) {
-    console.error('Network Error:', error);
-    alert('Network error. Please try again.');
+    console.error('Error:', error);
+    alert('An error occurred. Please try again later.');
   } finally {
     setIsSubmitting(false);
   }
@@ -62,6 +64,13 @@ const handleSubmit = async (e: FormEvent) => {
 
   return (
     <>
+      <Helmet>
+        <title>Contact Dubai Uniform | Request a Quote or Consultation</title>
+        <meta name="description" content="Get in touch with Dubai Uniform for custom uniform orders across Dubai, UAE, and the entire GCC region. Request a quote or consultation today." />
+        <meta name="keywords" content="contact uniform supplier dubai, custom uniforms gcc, uniform quote request uae" />
+        <link rel="canonical" href="https://dubaiuniform.com/contact" />
+      </Helmet>
+
       {/* Hero Section */}
       <section className="relative py-20 bg-primary-600">
         <div className="container-custom text-center text-white">
@@ -81,7 +90,7 @@ const handleSubmit = async (e: FormEvent) => {
               rel="noopener noreferrer"
               className="btn btn-secondary "
             >
-              <img src="src\assets\whatsapp icon.png" alt="" className='w-9' />
+              <img src={whatsapp} alt="" className='w-8 pr-1' />
               Chat on WhatsApp
             </a>
             <a 

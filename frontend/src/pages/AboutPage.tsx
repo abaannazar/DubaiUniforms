@@ -1,7 +1,11 @@
 import { useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import Aguy from "../assets/img/About/Aguy.png"
+import Aguy from "../assets/img/About/Aguy.png";
+import { Helmet } from 'react-helmet-async'; // Uncomment if you want to use Helmet for SEO
+import yarn from '../assets/img/yarning.png';
+import machine from '../assets/factory.png';
+import Manufacturing from '../assets/img/Manufacturing facility.png';
 
 
 const AboutPage = () => {
@@ -21,6 +25,12 @@ const AboutPage = () => {
 
   return (
     <>
+    <Helmet>
+      <title>About Dubai Uniform | Uniform Supplier in Dubai & GCC</title>
+      <meta name="description" content="Learn about Dubai Uniform – trusted uniform manufacturers in the UAE and across the GCC, specializing in high-quality, customized workwear." />
+      <meta name="keywords" content="about uniform company dubai, gcc uniform manufacturer, workwear uae" />
+      <link rel="canonical" href="https://dubaiuniform.com/about" />
+    </Helmet>
       {/* Hero Section */}
       <section className="relative py-20 bg-primary-600">
         <div className="container-custom text-center text-white">
@@ -63,7 +73,7 @@ const AboutPage = () => {
               </div>
             </motion.div>
             <div className="relative">
-              <div className="absolute -left-4 -top-4 w-24 h-24 bg-secondary-500 rounded-lg opacity-30"></div>
+              <div className="absolute -left-100 -top-4 w-24 h-24 bg-secondary-500 rounded-lg opacity-30"></div>
               <img 
                 src={Aguy} 
                 alt="Uniform craftsmen at work" 
@@ -140,52 +150,49 @@ const AboutPage = () => {
 
       {/* Our Team */}
       <section className="section bg-white">
-        <div className="container-custom">
-          <div className="section-title">
-            <h2 className="mb-4">Our Leadership Team</h2>
-            <p className="max-w-3xl mx-auto text-neutral-600">
-              Meet the experienced professionals who guide our company toward excellence.
-            </p>
-          </div>
+  <div className="container-custom">
+    <div className="section-title">
+      <h2 className="mb-4">Our Leadership Team</h2>
+      <p className="max-w-3xl mx-auto text-neutral-600">
+        Meet the experienced professionals who guide our company toward excellence.
+      </p>
+    </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-12 ">
-            {[
-              {
-                name: 'Abdul Nazar Marakar',
-                role: 'Founder & CEO',
-                image: 'https://media.licdn.com/dms/image/v2/C5103AQFXZ9b8Q-YWSg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1563098631270?e=1754524800&v=beta&t=C99I3pf39r66RcX9NHz0gJroBkqJ5-NtymI2EBWthbQ',
-                bio: '20+ years in textile manufacturing and business leadership across the Middle East.'
-              },
-              {
-                name: 'Fatima Al Hashimi',
-                role: 'Design Director',
-                image: 'https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-                bio: 'Award-winning fashion designer with expertise in corporate and hospitality uniforms.'
-              },
-              {
-                name: 'Raj Sharma',
-                role: 'Operations Manager',
-                image: 'https://images.pexels.com/photos/3778680/pexels-photo-3778680.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-                bio: 'Specializes in streamlining production processes and quality control systems.'
-              }
-            ].map((member, index) => (
-              // MAKE IT CENTRE
-              <div key={index} className="card text-center">
-                <div className="w-32 h-32 rounded-full overflow-hidden mx-auto mb-4">
-                  <img 
-                    src={member.image} 
-                    alt={member.name} 
-                    className="w-full h-full object-cover object-center"
-                  />
-                </div>
-                <h3 className="text-xl font-medium mb-1">{member.name}</h3>
-                <div className="text-secondary-500 font-medium mb-3">{member.role}</div>
-                <p className="text-neutral-600">{member.bio}</p>
-              </div>
-            ))}
+    <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 justify-center mt-12 max-w-5xl mx-auto">
+      {[
+        {
+          name: 'Abdul Nazar Marakar',
+          role: 'Founder & CEO',
+          image: 'https://media.licdn.com/dms/image/v2/C5103AQFXZ9b8Q-YWSg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1563098631270?e=1754524800&v=beta&t=C99I3pf39r66RcX9NHz0gJroBkqJ5-NtymI2EBWthbQ',
+          bio: '20+ years in textile manufacturing and business leadership across the Middle East.'
+        },
+        {
+          name: 'Abaan Nazar',
+          role: 'Management Staff',
+          image: 'https://media.licdn.com/dms/image/v2/D4D03AQGsNkO4P4xxEQ/profile-displayphoto-shrink_400_400/B4DZO.OhTYGoAg-/0/1734063298423?e=1755129600&v=beta&t=TNZ-lpNUC7rsiHz8Z5NT0QB4OonQJWwLd1tdyxBWw1w',
+          bio: 'Expert in supply chain management and operational efficiency with a focus on quality control.'
+        }
+      ].map((member, index) => (
+        <div
+          key={index}
+          className="card text-center hover:shadow-xl transition-shadow duration-300 w-80 h-auto p-6 rounded-xl border mx-auto bg-white"
+        >
+          <div className="w-36 h-36 rounded-full overflow-hidden mx-auto mb-5">
+            <img
+              src={member.image}
+              alt={member.name}
+              className="w-full h-full object-cover object-center"
+            />
           </div>
+          <h3 className="text-2xl font-semibold mb-2">{member.name}</h3>
+          <div className="text-secondary-500 font-medium mb-4">{member.role}</div>
+          <p className="text-neutral-600 text-base">{member.bio}</p>
         </div>
-      </section>
+      ))}
+    </div>
+  </div>
+</section>
+
 
       {/* Manufacturing Facility */}
       <section className="section bg-neutral-50">
@@ -201,18 +208,18 @@ const AboutPage = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-12">
             <div>
               <img 
-                src="https://images.pexels.com/photos/4480505/pexels-photo-4480505.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+                src={Manufacturing}
                 alt="Manufacturing facility" 
                 className="rounded-lg shadow-lg mb-4"
               />
               <div className="grid grid-cols-2 gap-4">
                 <img 
-                  src="https://images.pexels.com/photos/4480519/pexels-photo-4480519.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
-                  alt="Fabric cutting" 
+                  src= {yarn}
+                  alt="Yarn and fabric,Fabric cutting" 
                   className="rounded-lg shadow-lg h-48 object-cover"
                 />
                 <img 
-                  src="https://images.pexels.com/photos/3928260/pexels-photo-3928260.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+                  src={machine} 
                   alt="Sewing machine" 
                   className="rounded-lg shadow-lg h-48 object-cover"
                 />
